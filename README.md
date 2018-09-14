@@ -2,7 +2,8 @@ Simple web3.js and React project to display Ethereum transaction data using the 
 
 Usage: 
 
-1. npm install
-2. add access token to web3.js file
-3. npm start
-4. enter valid transaction hash from the Rinkeby network
+1. Clone this repository
+2. Run `npm install`
+3. Add Infura access token to web3.js file
+4. Run `npm start`
+5. Navigate to localhost:3000
