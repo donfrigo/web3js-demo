@@ -8,16 +8,16 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            output: null
+            transactionReceipt: null
         };
     }
 
     onSearchChange = (input) => {
-        this.setState({ output: input })
+        this.setState({ transactionReceipt: input })
     }
 
   render() {
-    const { output } = this.state;
+    const { transactionReceipt } = this.state;
     return (
       <Layout>
           <h1>
@@ -25,7 +25,7 @@ class App extends Component {
           </h1>
           <SearchBar searchChange={this.onSearchChange}/>
           <br />
-          <Segment transactionReceipt={output}/>
+          <Segment transactionReceipt={transactionReceipt}/>
       </Layout>
     );
   }
